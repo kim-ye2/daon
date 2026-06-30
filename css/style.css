@@ -1,6 +1,6 @@
 
 #header{position:fixed; width:100%; left:0; top:0; height:100px; z-index:90000;transition:all .2s linear;}
-#header::before{content:""; display:block; width:100%; height:0; background: rgba(0, 10, 36, 0.86); position:absolute; left:0; top:0; transition:all .4s; opacity: 0;  z-index:1}
+#header::before{content:""; display:block; width:100%; height:0; background: rgba(32, 65, 152, 0.95); position:absolute; left:0; top:0; transition:all .4s; opacity: 0;  z-index:1}
 #header::after{content:""; display:block; position:absolute; left:0; top:100px; width:100%; height:1px; background:rgba(255,255,255,0); z-index:2}
 #header .header_in{display:flex; align-items:center; justify-content: space-between; position:relative; z-index:10; height:100px;padding:0 100px;}
 #header .header_in h1 a{position:absolute;left:100px;top:30px;}
@@ -20,7 +20,7 @@
 /* #menu ul li dl.on{opacity:1; height:120px;visibility:visible;} */
 #menu ul li dl dd{padding:0 0 18px;}
 #menu ul li dl dd:last-child{padding:0;}
-#menu ul li dl dd a{display:block; font-size:17px; line-height:1.2; word-break:keep-all; transition:all .3s linear;color: #fff;}
+#menu ul li dl dd a{display:block; font-size:17px; line-height:1.2; word-break:keep-all; transition:all .3s linear;color: #C0CDEE;}
 #header.up #menu ul li dl{visibility:visible; opacity:1; height:290px;}
 
 #menuArea {display:none; position:fixed; top:0; right:0; z-index:99999999999999; height:100%; width:420px;}
@@ -152,3 +152,16 @@ height: 10px;outline:none;border:1px solid rgba(255, 255, 255, 0.80);background:
 .section03 .inq_box > div a span{display: flex;width: 45px;height: 45px;justify-content: center;align-items: center;flex-shrink: 0;aspect-ratio: 1/1;border-radius: 80px;background: #FFF;transition: all .4s;}
 .section03 .inq_box > div a:hover {background-color:#fff; color:#204198 ;}
 .section03 .inq_box > div a:hover  span{background: #EAF7FE;}
+
+
+
+#footer {background: #242424; padding: 80px 0;;}
+#footer .footer_in{max-width: 1600px; margin:  0 auto;;}
+#footer .footer_in .logobox{display: flex; justify-content: space-between; align-items: center;padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid rgba(255, 255, 255, 0.20);;}
+#footer .footer_in .f_menu{display: flex; gap: 25px; ;}
+#footer .footer_in .f_menu a{color: #FFF;font-size: 17px;font-style: normal;font-weight: 500;line-height: 26px; /* 152.941% */letter-spacing: -0.17px;}
+#footer .footer_in .address h4{color: #FFF;font-size: 17px;font-style: normal;font-weight: 700;line-height: 45px; /* 164.706% */letter-spacing: -0.17px;}
+#footer .footer_in .address  .add{color: #BAB8B3;font-size: 16px;font-style: normal;line-height: 30px;letter-spacing: -0.16px;}
+#footer .footer_in .address  .add span{color: #FFF; font-weight: 500;}
+#footer .footer_in .address  .copy{color: rgba(255, 255, 255, 0.50);
+font-size: 16px;line-height: 38px;letter-spacing: -0.16px;}

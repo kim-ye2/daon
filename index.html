@@ -79,24 +79,8 @@
             </div>            
         </div>        
         <!--- Header // E --->
-        <script>            
-                $(function(){
-                    $("#menu").mouseover(function(){
-                        $("#header").addClass("up");
-                            }).mouseleave(function(){
-                            $("#header").removeClass("up");
-                    });
-                            
-                });
-                $(window).on('scroll', function(){
-                    if($(window).scrollTop() > 0){
-                        $('#header').addClass('bg');
-                    } else {
-                        $('#header').removeClass('bg');
-                    }
-                });
-        </script>
-        <!-- 모바일 Menu -->
+
+        <!-- 모바일 Menu // S -->
         <div id="menuArea" class="header_mobile" >
             <div class="menuList">
                 <button type="button" class="btnMenu_mClose" title="Close">Close</button>
@@ -137,42 +121,7 @@
                 </ul>
             </div>
         </div>
-        <!-- //모바일 Menu -->
-         <script>
-         $('.menuBtn.mo').on('click', function(e){
-                e.preventDefault();
-                $('#menuArea').stop().fadeIn(300, function(){
-                    $('.menuList').css('right', '0');
-                });
-            });
-            // 메뉴 닫기
-            $('.btnMenu_mClose').on('click', function(){
-                $('.menuList').css('right', '-100%');
-                setTimeout(function(){
-                    $('#menuArea').fadeOut(200);
-                    $('html, body').css('overflow', '');
-                }, 400); // .menuList transition 시간과 맞추기
-            });
-
-            // 대메뉴 클릭 시 sMenu 슬라이드 다운
-            $('.menuList .list > li > a.dropdown-toggle').on('click', function(e){
-                e.preventDefault();
-                
-                var $sMenu = $(this).next('.sMenu');
-                
-                if($sMenu.is(':visible')){
-                    $sMenu.slideUp(300);
-                    $(this).removeClass('active');
-                } else {
-                    // 다른 열려있는 메뉴 닫기 (아코디언처럼 하나만 열리게 하려면)
-                    $('.menuList .sMenu').not($sMenu).slideUp(300);
-                    $('.menuList .list > li > a.dropdown-toggle').not(this).removeClass('active');
-                    
-                    $sMenu.slideUp(0).slideDown(300); // 혹시 모를 깜빡임 방지
-                    $(this).addClass('active');
-                }
-            });
-         </script>
+        <!-- 모바일 Menu // E-->
 
 
         <!-- S:: 메인비주얼 -->
@@ -204,9 +153,10 @@
             </div>
         </div>
         <!-- E:: 메인비주얼 -->
+
          <script>
                 $(document).ready(function(){
-                    // 비쥬얼
+                    // 메인비쥬얼 슬라이드
                     $('.visual_slide').slick({
                             infinite: true,
                             speed: 500,
@@ -238,10 +188,7 @@
                                     $('.slick-active').addClass('action'); 
                                 });
                     });							
-
             });	
-
-
          </script>
 
         <!---section01 // S -->
@@ -266,6 +213,7 @@
             </div>
          </div>         
         <!---section01 // E -->
+
 
         <!---section02 // S -->
          <div class="section02">
@@ -376,6 +324,7 @@
         <!---section03 // E -->
 
 
+        <!--- Footer // S --->
         <footer id="footer">
             <div class="footer_in">
                 <div class="logobox">
@@ -394,12 +343,22 @@
                     <p class="add"><span>FAX</span> 02-3424-3811</p>
                     <p class="copy">Copyright © (주)다온테크놀로지. All rights reserved.</p>
                 </div>
+            </div> 
+        </footer>        
+        <!--- Footer // E --->
 
-            </div>            
-
-        </footer>
-
+        <!-- Sidequick // S --->
+        <div id="sidequick" data-aos="fade-in" data-aos-delay="300">
+            <a href="" class="go_inq">
+              <img src="images/side_inq.svg" alt="">
+            </a>
+            <a href="#wrap" class="go_top">
+              <img src="images/side_top.svg" alt="">
+            </a>
+        </div>        
+        <!-- Sidequick // E --->
     </div>
+    
 </body>
 </html>
 <script>

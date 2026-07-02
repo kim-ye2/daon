@@ -669,3 +669,53 @@ justify-content: center;align-items: center;border-radius: 100%;background: #042
 #agreeModal .modal_wrap {width: calc(100% - 40px);}
 }
 
+/* 시스템 구축 + 유지보수 business */
+.business {background:url('../images/busi_bg.png') center 100% no-repeat;}
+.business .busi_in .top{color: #333;font-size: 24px;font-weight: 500;line-height: 70px; /* 291.667% */letter-spacing: -0.72px;margin:0 0 50px 0;}
+.business .busi_in  ul{display: flex;align-items: flex-start;}
+.business .busi_in  ul li{flex: 1;display: flex; flex-direction: column; align-items: center; justify-content: flex-start; border-right: 1px solid #ddd;;align-self: stretch;}
+.business .busi_in  ul li:last-child{border:none;}
+.business .busi_in  ul li .icon{display: flex; width: 250px;height: 250px;padding: 10px;flex-direction: column;justify-content: center;align-items: center;gap: 10px;border-radius: 250px;border: 15px solid #F3F6F8;background: #fff;box-shadow: 0 0 10px 0 rgba(87, 96, 98, 0.15);color: #204198;text-align: center;font-size: 26px;font-weight: 700;line-height: 40px; /* 153.846% */letter-spacing: -0.78px;box-sizing: border-box;}
+
+
+.business .busi_in  ul li  .num{color: #204198;font-family: Play;font-size: 26px;font-weight: 700;line-height: 55px; /* 211.538% */letter-spacing: -0.78px;}
+
+.business .busi_in  ul li .tbox{display: flex; flex-direction: column; justify-content: center; align-items: center;;}
+.business .busi_in  ul li .tbox .dot{color: #000;font-size: 22px;font-style: normal;font-weight: 500;line-height: 1.4;letter-spacing: -0.66px;margin: 6px 0;;;text-align: center;}
+.business .busi_in  ul li .tbox .dot:before{content:"· ";display: inline-block; ;color: #204198;;padding-right:5px;}
+
+.business .busi_in  ul li.c02 .icon,
+.business .busi_in  ul li.c02  .num,
+.business .busi_in  ul li.c02 .tbox .dot:before {color: #206298;}
+.business .busi_in  ul li.c03 .icon,
+.business .busi_in  ul li.c03  .num,
+.business .busi_in  ul li.c03 .tbox .dot:before{color: #209098;}
+.business .busi_in  ul li.c04 .icon,
+.business .busi_in  ul li.c04  .num,
+.business .busi_in  ul li.c04 .tbox .dot:before {color: #66B8E2;}
+
+
+    @media (max-width: 1200px) {
+    .business .busi_in .top {font-size: 20px; line-height: 1.6; margin: 0 0 36px 0;}
+    .business .busi_in ul li .icon {width: 200px; height: 200px; font-size: 21px; border-width: 12px;}
+    .business .busi_in ul li .icon img{height: 50px;;}
+    .business .busi_in ul li .tbox .dot {font-size: 18px;}
+    .business .busi_in ul li .num {font-size: 22px;}
+    }
+
+    @media (max-width: 768px) {
+    .business .busi_in .top {font-size: 17px; word-break: keep-all;}
+    .business .busi_in ul {flex-wrap: wrap;}
+    .business .busi_in ul li {flex: calc(50% - 1px); border-bottom: 1px solid #ddd; padding: 40px 20px;border-right:none;}
+    .business .busi_in ul li:nth-child(even) {border-right: none;}
+    .business .busi_in ul li .icon {width: 180px; height: 180px; font-size: 20px; border-width: 10px;}
+    .business .busi_in ul li .icon img {width: 50px;}
+    .business .busi_in ul li .num {font-size: 20px; line-height: 40px;}
+    .business .busi_in ul li .tbox .dot {font-size: 17px;}
+    .business .busi_in ul li .tbox .dot br {display: none;}
+    }
+
+    @media (max-width: 540px) {
+    .business .busi_in ul li {flex: 100%; border-right: none;}
+    .business .busi_in ul li:nth-child(even) {border-right: none;}
+    }
